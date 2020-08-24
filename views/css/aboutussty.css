@@ -1,0 +1,440 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Poppins','monospace';
+}
+#grppicpixo{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#grppicpixo .side{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(pixogrp.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#grppicpixo .side#side1{
+	clip-path: polygon(0% 0%, 56% 0%, 43% 20%, 61% 26%, 47% 45%, 57% 47%, 46% 63%, 58% 65%, 46% 80%, 58% 83%, 44% 94%, 60% 97%, 0% 100%);
+}
+#grppicpixo .side#side2{
+	clip-path: polygon(100% 0, 56% 0%, 43% 20%, 61% 26%, 47% 45%, 57% 47%, 46% 63%, 58% 65%, 46% 80%, 58% 83%, 44% 94%, 60% 97%, 100% 100%);
+}
+.adjust{
+	height: 100vh;
+	position: relative;
+	background: #000;
+	z-index: -1;
+}
+#grppicpixo img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: none;
+
+}
+.finalyear{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	min-height: 100vh;
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #000;
+
+}
+.finalyear .boxd{
+	width: 400px;
+	height: 300px;
+	margin: 30px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 0.3s;
+
+}
+.finalyear .boxd:hover{
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(255,255,255,0.3)
+}
+.finalyear .boxd .imgbox{
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.finalyear .boxd:hover .imgbox{
+	opacity: 0.7;
+}
+.finalyear .boxd .imgbox img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.finalyear .boxd .contentbox{
+	transform-style: preserve-3d;
+	position: absolute;
+    left: 10%;
+    bottom: -8%;
+    width: 80%;
+    height: 37%;
+    text-align: center;
+    background: rgba(255,255,255,1);
+    transform:scaleY(0) ;
+    transform-origin: top;
+    transition:transform 0.3s;
+    overflow: hidden;
+}
+.finalyear .boxd:hover .contentbox{
+	transition:transform 0.3s;
+	transform: scaleY(1);
+	transform-origin: bottom;
+}
+.finalyear .boxd .contentbox span{
+	font-size: 36px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.8);
+	margin: 10px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.3s;
+}
+.finalyear .boxd:hover .contentbox span{
+		opacity: 1;
+}
+.finalyear .boxd .contentbox p{
+	font-size: 24px;
+	color: rgba(0,0,0,0.6);
+	transform: translateX(-100%);
+	transition: 0.2s;
+	transition-delay: 0.3s;
+}
+.finalyear .boxd:hover .contentbox p{
+	transform: translateX(0);
+}
+.description{
+	font-size: 36px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: white;
+	background-color: #000;
+}
+.ThirdYear{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: #000;
+}
+.ThirdYear .box{
+	perspective: 600px;
+	transform-style: preserve-3d;
+	margin: 10px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.75s;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 5px rgba(255,255,255,0.5);
+}
+.ThirdYear .box .show1{
+	transform-style: preserve-3d;
+	transform-origin: top;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.75s;
+	overflow: hidden;
+}
+.ThirdYear .box:hover .show1{
+	transform: rotateX(90deg);
+}
+.ThirdYear .box .show2{
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: 0.75s;
+	overflow: hidden;
+}
+.ThirdYear .box:hover .show2{
+	transform: rotateX(-90deg);
+}
+.ThirdYear .box .hidden:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+}
+.ThirdYear .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.75s;
+	color: white;
+	background: black;
+	opacity: 0;
+}
+.ThirdYear .box .hidden .details{
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	position: absolute;
+	top: 50%;
+	left:0%;
+	transform: translateY(-50%);
+}
+.ThirdYear .box .hidden .details h2{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #fff;
+}
+.ThirdYear .box .hidden .details h2 span{
+	font-size: 18px;
+	color: #a7a7a7;
+}
+.ThirdYear .box:hover .hidden{
+	opacity: 1;
+}
+.ThirdYear .box .show1 img{
+	width: 200%;
+	height: 100%;
+	object-fit: cover;
+}
+.ThirdYear .box .show2 img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200%;
+	height: 100%;
+	object-fit: cover;
+}
+.SecondYear{
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	flex-wrap: wrap;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+}
+.SecondYear .box{
+	margin: 10px;
+	width: 300px;
+	height: 300px;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);*/
+	perspective: 600px;
+}
+.SecondYear .box .front{
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateX(0deg);
+	backface-visibility: hidden;
+	transition: 0.50s;
+	transform-style: preserve-3d;
+}
+.SecondYear .box .back{
+	background: black;
+	color: white;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateX(180deg);
+	backface-visibility: hidden;
+	transition: 0.50s;
+}
+.SecondYear .box .back:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 50%;
+
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+}
+.SecondYear .box .back .details{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.SecondYear .box .back .details h2{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #fff;
+}
+.SecondYear .box .back .details h2 span{
+	color:#a7a7a7;
+	font-size: 18px;
+}
+.SecondYear .box .back p{
+	font-style: italic;
+	font-family: monospace;
+}
+.SecondYear .box:hover .front{
+	transform: rotateX(-180deg);
+}
+.SecondYear .box:hover .back{
+	transform: rotateX(0deg);
+}
+.SecondYear .box .front img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.FirstYear{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.FirstYear .box{
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+.FirstYear .box .show{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition-property: left,z-index,transform;
+	transition-delay: 0s,0.5s,0.5s;
+	transition-duration: 0.5s,0s,0.5s;
+	z-index: 2;
+}
+.FirstYear .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition-property: left,z-index,transform;
+	transition-delay: 0s,0.5s,0.5s;
+	transition-duration: 0.5s,0s,0.5s;
+	transform: translate(3%,3%);
+	background: rgba(0, 0, 0, 1);
+	z-index: 1;
+}
+.FirstYear .box .hidden .details{
+	padding: 8px;
+	margin: 4px;
+	transform: translateY(133%);
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+.FirstYear .box:hover .show{
+	transition-property: transform,z-index,left;
+	transition-delay: 0s,0.5s,0.5s;
+	transition-duration: 0.5s,0s,0.5s;
+	transform: translateX(-50%);
+	z-index: 1;
+	left: 53%;
+}
+.FirstYear .box:hover .hidden{
+	
+	transition-property: transform,z-index,left;
+	transition-delay: 0s,0.5s,0.5s;
+	transition-duration: 0.5s,0s,0.5s;
+	transform: translate(53%,3%);
+	z-index: 2;
+	left: -53%;
+}
+.FirstYear .box .hidden h2{
+	margin: 2px;
+	font-size: 24px;
+	font-family: monospace;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.FirstYear .box .hidden h2 span{
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #a7a7a7;
+}
+
+.FirstYear .box .show img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+@media only screen and (max-width: 900px){
+	#grppicpixo{
+		position: relative;
+		height: auto;
+		background: #000;
+	}
+	#grppicpixo img{
+		display: block;
+	}
+	#grppicpixo .side{
+		display: none;
+	}
+	.adjust{
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px){
+	.finalyear .boxd .contentbox span{
+		font-size: 26px;
+
+	}
+	.finalyear .boxd .contentbox p{
+		font-size: 18px;
+	}
+}

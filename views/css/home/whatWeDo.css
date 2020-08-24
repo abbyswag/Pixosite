@@ -1,0 +1,137 @@
+.whatwedo-heading{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    opacity: .7;
+    font-family: 'Lemonada',cursive;
+}
+.whatwedo-para{
+    text-align: center;
+    margin-top: -1rem;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.whatwedo-data{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.whatwedo-card{
+    flex: 1 0 370px;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    position: relative;
+    transition: ease-in-out box-shadow .4s;
+    border-top: solid blue 2px;
+}
+.whatwedo-card:hover{
+	box-shadow: 10px 9px 33px -6px rgba(0,0,0,0.75);
+}
+.feature-item{
+    display: flex;
+}
+.feature-img{
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width .3s ease-in-out;
+}
+.feature-img:first-child{
+    width:50%;
+
+    background-image: url('../../data/home/photography-original-feature.jpg');
+}
+.feature-img:last-child{
+    width:50%;
+    
+    background-image: url('../../data/home/photography-edited-feature.jpg');
+}
+/* .feature-item:hover .feature-img:last-child{
+	width:100%;
+}
+.feature-item:hover .feature-img:first-child{
+	width:0%;
+} */
+
+.feature-video{
+    height: 16rem;
+}
+.feature-animation{
+    height: 16rem;
+}
+.feature-poster{
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../data/home/graphics-feature.jpg');
+}
+.feature-template{
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../data/home/web-feature.gif');
+}
+
+.whatwedo-card p{
+    margin-bottom: 2rem;
+
+    line-height: 1.4rem;
+    font-family: sans-serif;
+}
+
+.whatwedo-card p:nth-child(2){
+    font-variant: all-petite-caps;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 1rem 0;
+}
+.whatwedo-card a{
+	color: #02022f;
+	font-variant-caps: all-petite-caps;
+	font-weight: 900;
+    font-size: 1.2rem;
+    
+	position: absolute;
+	margin: 1rem 0;
+	bottom: .2rem;
+	right: 1rem;
+	cursor: pointer;
+}
+.gallery-btn-wrapper{
+	display:grid;
+    place-items:center;
+    margin: 2rem;
+}
+.gallery-btn{
+    width: 11rem;
+    color: white;
+    background-image: linear-gradient(45deg, #543669, #8840bb);
+}
+.gallery-btn:hover{
+	background-image: linear-gradient(45deg, #704a8b, #a24fdd);
+}
+.gallery-btn:active{
+	background-image: linear-gradient(45deg, #3e284d, #71349b);
+}
+@media screen and (max-width:700px){
+	.whatwedo-card{
+		flex: 1 0 250px;
+	}
+}
+@media screen and (max-width:480px){
+	.whatwedo{
+		width: -webkit-fill-available;
+	}
+
+.whatwedo-card {
+    margin: .5rem;
+}
+
+.whatwedo-para {
+    padding: 0 1rem;
+    margin-top: 0rem;
+}
+}
+ 

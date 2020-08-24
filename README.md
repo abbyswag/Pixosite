@@ -1,2 +1,2 @@
 # Pixosite
-A creative freelancing website
+Our club website project
