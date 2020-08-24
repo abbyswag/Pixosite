@@ -5,7 +5,7 @@
     /* background-image: radial-gradient(rgb(20, 37, 197),rgb(100, 113, 215)); */
     padding: 4rem 0 0 0;
     width: 100%;
-    background-image: url(../images/main/home-animation.gif);
+    background-image: url(../../data/home/home-animation.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }

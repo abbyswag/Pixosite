@@ -39,5 +39,5 @@ app.get('/store',(req,res)=>{
 
 
 // starting server
-app.listen(process.env.PORT||3000,()=>console.log(`Server is started at ${process.env.PORT||3000}`))
+app.listen(process.env.PORT||9000,()=>console.log(`Server is started at ${process.env.PORT||9000}`))
 
