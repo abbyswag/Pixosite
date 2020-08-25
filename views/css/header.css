@@ -1,4 +1,4 @@
-header{
+.header{
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
@@ -187,6 +187,10 @@ header{
 @media screen and (max-width:700px){
 	.responsiveNavbar{
 		display:block;
+		margin-right: 0rem;
+	}
+	.crossIcon{
+		margin-right: 0rem;
 	}
 	.navItems{
 		display:inline-block;

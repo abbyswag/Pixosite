@@ -87,6 +87,6 @@
 }
 @media screen and (max-width:480px){
     footer{
-        width: -webkit-fill-available;
+        width: 130%;
     }
 }

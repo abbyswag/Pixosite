@@ -34,7 +34,7 @@ app.get('/gallery',(req,res)=>{
 })
 
 app.get('/store',(req,res)=>{
-    res.render('store')
+    res.render('/home/abi/Desktop/Pixosite/views/store/store.ejs')
 })
 
 

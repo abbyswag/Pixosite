@@ -1,0 +1,286 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.gallery {
+	max-height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: #ffd442;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.center_text {
+	position: absolute;
+	height: 65%;
+    width: 32%;
+    top: 17%;
+    left: 33%;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	opacity: 0;
+	animation: center_anime 0.6s linear;
+	animation-fill-mode: forwards;
+	z-index: 400;
+}
+
+@media screen and (max-width:700){
+	.center_text{
+		z-index: 0;
+	}
+}
+
+@keyframes center_anime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.6;
+	}
+}
+
+.center_text p {
+	font-family: sans-serif;
+    font-size: 1rem;
+    margin: 45% 0%;
+    padding: 15%;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.4rem;
+}
+
+.gallery_flow {
+	z-index: 200;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+}
+
+.gallery_div {
+	background-color: transparent;
+	width: 19.66%;
+	opacity: 1;
+	display: inline-block;
+	position: relative;
+}
+
+.gallery_div img {
+	width: 100%;
+}
+
+.gallery_div1 {
+	animation: gallery_move1 30s linear infinite;
+	top: -72rem;
+}
+
+.gallery_div2 {
+	animation: gallery_move2 30s linear infinite;
+	top: 30rem;
+}
+
+.gallery_div3 {
+	animation: gallery_move1 30s linear infinite;
+	top: -72rem;
+}
+
+.gallery_div4 {
+	animation: gallery_move2 30s linear infinite;
+	top: 30rem;
+}
+
+.gallery_div5 {
+	animation: gallery_move1 30s linear infinite;
+	top: -72rem;
+}
+
+@keyframes gallery_move1 {
+	0% {
+		transform: translate(0,0);
+	}
+
+	50% {
+		transform: translate(0,80rem); 
+	}
+}
+
+@keyframes gallery_move2 {
+	0% {
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translate(0,-80rem); 
+	}
+}
+.carousel{
+	perspective: 800px;
+	height: 800px;
+	background: #000;
+
+}
+.carousel .carousel-item{
+	width: 400px;
+
+}
+.carousel .carousel-item video{
+	width: 100%;
+}
+.carousel .carousel-item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.carousel .carousel-item h3{
+	font-family: 'poppins','monospace';
+	font-size: 2em;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	box-sizing: border-box;
+	margin:-5px 0;
+	padding: 0;
+	font-weight: bold;
+}
+.sw{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: grey;
+}
+.sw .video{
+	position: relative;
+	width: 440px;
+	height: 336px;
+	margin: 24px;
+	transition: 0.25s;
+	transition-delay: 0.50;
+
+}
+.sw .video video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.sw .video .cb{
+	position: absolute;
+	top: 15%;
+	left: -5%;
+	background: black;
+	color: white;
+	padding: 15px;
+	width: 90%;
+	transform: scaleX(0);
+	transition: transform 0.25s;
+	transform-origin: right;
+	overflow: hidden;
+}
+.sw .video:hover .cb{
+	transition: transform 0.25s;
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.sw .video .cb h1{
+	margin: 8px;
+	font-size: 24px;
+	display: block;
+	font-family: monospace;
+	opacity: 0;
+	transition: 0.50s;
+	
+}
+.sw .video:hover .cb h1{
+	opacity: 1;
+	transition-delay: 0.35s;
+}
+.sw .video .cb p{
+	margin: 10px;
+	font-size: 15px;
+	display: block;
+	font-family:sans-serif;
+	transition: 0.50s;
+	transform: translateY(150%);
+	
+}
+.sw .video:hover .cb p{
+	transform: translateY(0%);
+	transition-delay: 0.25s;
+}
+.swipper2{
+	width: 100%;
+	height: 500px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.swiper-container {
+      width: 300px;
+      height: 300px;
+     position: relative;
+    }
+
+    .swiper-slide {
+    	background-image: url(image.jpg);
+      background-position: center;
+      background-size: cover;
+	}
+.swiper-wrapper{
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+@media screen and (max-width:480px){
+	.gallery-body{
+		width: 130vw;
+	}
+
+}
+@media screen and (max-width:700px){
+	.gallery_div5{
+		display: none;
+	}
+	.center_text{
+		left: 74%;
+		border-radius: 0;
+		z-index: 0;
+		height: 100%;
+		top: 0;
+		display: grid;
+		place-items: center;
+}
+.center_text p{
+	transform: rotateZ(90deg);
+	margin: 0;
+	padding: 0;
+}
+}
+
+
+.gallery-portait{
+	height: 310px;
+	width: 100%;
+}
+.gallery-landscape{
+	height: 190px;
+	width: 100%;
+}

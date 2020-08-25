@@ -4,13 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/header-gallery.css">	s
+    <link rel="stylesheet" type="text/css" href="./css/gallery.css">
+
     <title>Document</title>
 </head>
 <body>
+
+    <div class="gallery-body">
+        <div class="gallery">
+            <div class="center_text">
+                <p>EXPLORE THE GALLERY AND RELIVE THEIR WORKS</p>
+            </div>
+    
+            <div class="gallery_flow">
+                    <div class="gallery_div gallery_div1">
+                        <img  src="./data/gallery/ankita-credit9.jpeg" class="gallery-portait">
+                        <img src="./data/gallery/ankita-credit8.jpeg" class="gallery-landscape">
+                        <img src="./data/gallery/ankita-credit6.jpeg" class="gallery-portait">
+                        <img src="./data/gallery/ankita-credit2.jpeg" class="gallery-landscape">
+                    </div>
+                    <div class="gallery_div gallery_div2">
+                    </div>
+                    <div class="gallery_div gallery_div3">
+                        <img src="./data/gallery/harsh-credit11.jpeg"class="gallery-portait">
+                        <img src="./data/gallery/harsh-credit3.jpeg" class="gallery-landscape">
+                        <img src="./data/gallery/harsh-credit12.jpeg" class="gallery-portait">
+                        <img src="./data/gallery/harsh-credit7.jpeg" class="gallery-landscape">
+                    </div>
+                    <div class="gallery_div gallery_div4">
+                    </div>
+                    <div class="gallery_div gallery_div5">
+                        <img  src="./data/gallery/harsh-credit2.jpeg" class="gallery-portait">
+                        <img src="./data/gallery/ankita-credit8.jpeg" class="gallery-landscape">
+                        <img src="./data/gallery/ankita-credit10.jpeg" class="gallery-portait">
+                        <img src="./data/gallery/harsh-credit4.jpeg" class="gallery-landscape">
+                    </div>
+                </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="./data/gallery/ankita-credit7.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/harsh-credit9.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/ankita-credit5.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/harsh-credit6.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/ankita-credit11.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/harsh-credit1.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/ankita-credit4.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/harsh-credit8.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/ankita-credit1.jpeg">
+                <h3>Title</h3>
+            </div>
+            <div class="carousel-item">
+                <img src="./data/gallery/harsh-credit5.jpeg">
+                <h3>Title</h3>
+            </div>
+        </div>
+        <div class="sw">
+            <div class="video">
+                <video src="cubenab.mp4" autoplay="" muted="" loop=""></video>
+                <div class="cb">
+                    <h1>Web Designer</h1>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src="cubenab.mp4" autoplay="" muted="" loop=""></video>
+                <div class="cb">
+                    <h1>Photographer</h1>
+                    <p>A professional photographer may be an employee, for example of a newspaper, or may contract to cover a particular planned event such as a wedding or graduation.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src="cubenab.mp4" autoplay="" muted="" loop=""></video>
+                <div class="cb">
+                    <h1>Photographer</h1>
+                    <p>A professional photographer may be an employee, for example of a newspaper, or may contract to cover a particular planned event such as a wedding or graduation.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="swipper2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(imagec.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(imagec.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(imagec.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(imagec.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+    
+	
+   	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   	<script type="text/javascript">
+	   		 var swiper = new Swiper('.swiper-container', {
+	      	effect: 'cube',
+	      	grabCursor: true,
+	      	cubeEffect: {
+	        shadow: true,
+	        slideShadows: true,
+	        shadowOffset: 20,
+	        shadowScale: 0.94,
+	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	      },
+	    });
+   	</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('.carousel').carousel();
+		  });
+	</script>
 
     
     <%- include('./partials/footer') -%>

@@ -49,6 +49,7 @@
     height: 300px;
     transition: transform .3s ease-in-out;
 }
+
 /* .card-image:nth-child(2){
     transform: translateX(150px);
 }
@@ -165,6 +166,6 @@
 }
 @media screen and (max-width:480px){
     .feature-work{
-        width: -webkit-fill-available;
+        width: 130%;
     }
 }

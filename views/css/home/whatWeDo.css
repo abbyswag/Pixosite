@@ -40,12 +40,15 @@
 .feature-img:first-child{
     width:50%;
 
-    background-image: url('../../data/home/photography-original-feature.jpg');
+    background-image: url('../../data/home/photography-original-feature.jpeg');
+}
+.feature-img:first-child:hover .feature-img:first-child::after{
+    content: 'Original';
 }
 .feature-img:last-child{
     width:50%;
     
-    background-image: url('../../data/home/photography-edited-feature.jpg');
+    background-image: url('../../data/home/photography-edited-feature..jpeg');
 }
 /* .feature-item:hover .feature-img:last-child{
 	width:100%;
@@ -66,11 +69,9 @@
     background-size: cover;
     background-image: url('../../data/home/graphics-feature.jpg');
 }
-.feature-template{
-    height: 16rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../../data/home/web-feature.gif');
+.feature-template-img{
+    width: 92vw;
+    height: 24rem;
 }
 
 .whatwedo-card p{
@@ -118,15 +119,19 @@
 @media screen and (max-width:700px){
 	.whatwedo-card{
 		flex: 1 0 250px;
-	}
+    }
+    .feature-template-img{
+        height: 16rem;
+        width: 116vw;
+    }
 }
 @media screen and (max-width:480px){
 	.whatwedo{
-		width: -webkit-fill-available;
+		width: 130%;
 	}
 
 .whatwedo-card {
-    margin: .5rem;
+    margin: 1rem .5rem;
 }
 
 .whatwedo-para {

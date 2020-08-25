@@ -70,6 +70,6 @@
 }
 @media screen and (max-width:480px){
     .contributers{
-        width: -webkit-fill-available;
+        width: 105%;
     }
 }
