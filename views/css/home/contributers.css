@@ -69,7 +69,5 @@
     transition: width .3s ease-in-out;
 }
 @media screen and (max-width:480px){
-    .contributers{
-        width: 105%;
-    }
+
 }

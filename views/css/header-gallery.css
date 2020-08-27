@@ -1,4 +1,4 @@
-.header{
+.site-header{
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
@@ -9,7 +9,11 @@
 	height: 4.8rem;
 	top: 0;
 }
-
+@media screen and (max-width:700){
+	.site-header{
+		right: 0;
+	}
+}
 .gradient-border {
 	--borderWidth: 5px;
 	background: #1D1F20;

@@ -11,7 +11,7 @@ function createBubbles(){
         ele.className = 'site-footer-bubble'
         bubbleBase.appendChild(ele)
         let bubble = document.querySelectorAll('.site-footer-bubble')[i]
-        bubble.style.left = getRandomInt(93,0)+'vw'
+        bubble.style.left = getRandomInt(88,0)+'vw'
         bubble.style.width = `${getRandomInt(50,0)}px`
         bubble.style.height = `${getRandomInt(50,0)}px` 
     }

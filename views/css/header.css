@@ -1,13 +1,19 @@
-.header{
+
+.site-header{
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
+	height: 2.7rem;
 	padding: 1rem;
+	position: fixed;
+	top: 0;
 	background-color: #333333;
 	color: #ffffff;
-	width: -webkit-fill-available;
-	position: fixed;
-	height: 2.7rem;
-	top: 0;
+}
+@media screen and (max-width:700){
+	.site-header{
+		right: 0;
+	}
 }
 
 .gradient-border {
@@ -32,8 +38,7 @@
 	animation: animatedgradient 2s ease alternate infinite;
 	background-size: 300% 300%;
 	}
-  
-  
+   
   @keyframes animatedgradient {
 	  0% {
 		  background-position: 0% 50%;
@@ -75,8 +80,10 @@
 	}
 }
 
+
 .responsiveNavbar{
 	display: none;
+	justify-content: flex-end;
 	cursor: pointer;
 	padding: 1rem;
 	margin-right:2rem;
@@ -104,6 +111,7 @@
 }
 .crossIcon{
 	display: none;
+	justify-content: flex-end;
 	padding: 1rem;
 	margin-right: 2rem;
 }
@@ -185,12 +193,13 @@
 
 
 @media screen and (max-width:700px){
+	
 	.responsiveNavbar{
 		display:block;
-		margin-right: 0rem;
+		margin-right: -1rem;
 	}
 	.crossIcon{
-		margin-right: 0rem;
+		margin-right: -1rem;
 	}
 	.navItems{
 		display:inline-block;
@@ -203,3 +212,8 @@
 	}
 }
 
+@media screen and (max-width:480px){
+	.site-header{
+		width: 91%;
+	}
+}

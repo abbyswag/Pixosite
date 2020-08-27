@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/photography',(req,res)=>{
-    res.send('ths is photography page')
+    res.render('teams/photography.ejs')
 })
 
 router.get('/video',(req,res)=>{
